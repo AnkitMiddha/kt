@@ -1,0 +1,10 @@
+
+#contact-info  .container {
+display: block;
+align-items: center;
+}
+#contact-info .container .box  {
+  float: none;
+  
+    
+}
