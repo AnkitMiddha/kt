@@ -5,6 +5,12 @@ align-items: center;
 }
 #contact-info .container .box  {
   float: none;
-  
+  width:100%
     
+}
+#vs .items {
+  display :block;
+}
+#contact-info .box {
+  border-bottom: #444 dotted 1px;
 }
