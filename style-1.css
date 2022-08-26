@@ -67,28 +67,6 @@ h4 {
     color: #fff;
 }
 
-/* input {
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-    border: #ddd 1px solid;
-    height: 20px;
-} */
-
-/* label {
-    display:flex;
-    color: #666;
-    text-align: left;
-} */
-
-/* span {
-
-    font-size: 2rem;
-    width: 100%;
-} 
-*/
-
-
  main {
     margin-top: 1.2rem;
     background: url("");
@@ -104,7 +82,7 @@ p {
     font-size: 1.5rem;
 }
 
-.navbar , #contact-info .container{
+.navbar {
     display: flex;
     position: sticky;
     top: 0;
@@ -153,9 +131,6 @@ p {
 
 }
 
-/* section {
-    scroll-padding-block-start: 0.2rem;
-} */
 
 div {
     padding: 2.5rem;  
@@ -185,7 +160,7 @@ div {
 }
 .box {
     float: left;
-    width: 33.3%;
+    width: 100%;
     padding: 20px;
     text-align: center;
 }
