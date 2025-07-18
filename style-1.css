@@ -2,51 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
- #showcase {
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+#showcase {
    background: #333 url("./bg5.jpg") no-repeat center center/cover;
    height: 100vh;
    color: #f4f4f4;
+   position: relative;
+   animation: fadeIn 1.5s ease-in-out;
 }
+
 #showcase h1 {
     font-size: 3rem;
+    animation: slideDown 1s ease-in-out;
 }
+
 .heading {
     font-size: 2.1rem;
     text-align: center;
-    padding-bottom: 1.1rem;
-    padding-top: 1.1rem;
+    padding: 1.1rem 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #548;
+    color: #27496d;
+    animation: slideIn 1.5s ease-in-out;
 }
+
 .items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
 }
+
 .items div {
     flex: 1;
+    min-width: 280px;
     padding: 1rem;
     text-align: center;
-
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
 }
- .item img { 
-    justify-content:flex-start;
-    padding: 1rem;
 
+.items div:hover {
+    transform: scale(1.05);
+}
+
+.item img { 
+    width: 100%;
+    height: auto;
     margin-bottom: 1rem;
-     }
-     .goa {
-        justify-content: center;
-        background: url("./goa.jpg") no-repeat;
-     }
-     .kerela {
-        justify-content: center;
-        background: url("./kerala.jpg") no-repeat ;
-     }
-     .udaipur {
-        justify-content: center;
-        
-        background: url("./UDAIPUR.jpg") no-repeat;
-     }
+    border-radius: 8px;
+}
+
 .background {
     display: flex;
     flex-direction: column;
@@ -60,26 +77,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(0, 0, 0, 0.3);
-}
-
-h4 {
-    color: #fff;
-}
-
- main {
-    margin-top: 1.2rem;
-    background: url("");
-} 
-
-.text {
-    text-decoration: none;
-    color: white;
-}
-
-p {
-    font-family: Playfair;
-    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar {
@@ -89,132 +87,137 @@ p {
     background: #344a72;
     color: #fff;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 10;
     padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+
 .navbar ul {
     display: flex;
     align-items: center;
     list-style: none;
-
 }
-.navbar  ul li a {
+
+.navbar ul li a {
     color: #fff;
     padding: 0.75rem;
     margin: 0 0.25rem;
-
+    transition: all 0.3s ease-in-out;
 }
 
- ul li  a:hover {
-
+.navbar ul li a:hover {
     color: #f7c08a;
-    background-color: #333;
+    background-color: #222;
+    border-radius: 5px;
 }
 
-
-/* 
-#new {
-    padding: 1rem 1.4rem;
-    line-height: 1.8;
-    border: 1px #ddd solid;
-    color: #333;
-    background-color: #fff;
-    font-family: Playfair;
-
+.text {
+    text-decoration: none;
+    color: white;
 }
 
-#new h1 {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2rem;
-    padding-top: 1.2rem;
+main {
+    margin-top: 1.2rem;
+}
 
-} */
-
-
-/* div {
-    padding: 2.5rem;  
-} */
-
-/* .container {
-    margin: auto;
-    max-width: 800px;
-    overflow: auto;
-    padding: 0 1.5rem;
-} */
-
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #555;
+}
 
 .about {
-    background: url("./about\ us.jpg") no-repeat center center/cover;
+    background: url("./about us.jpg") no-repeat center center/cover;
     text-align: center;
-    height: 50%;
+    height: 60vh;
     color: #fff;
-    font-size: 1.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description {
     background-color: #f4f4f4;
-    font-size: 1.3rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    padding: 2rem;
+    line-height: 1.8;
 }
+
 .box {
     float: left;
     width: 100%;
     padding: 20px;
     text-align: center;
+    margin-bottom: 0.8rem;
 }
 
-.box {
-       margin-bottom: 0.8rem;
+#contact-info .container {
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #344a72;
+    color: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
- #contact-info .container {
-    
-        margin: .5rem;
-        /* max-width: 800px; */
-        overflow: auto;
-        padding: 0 20px;
-        background-color: #344a72;
-        color: #f4f4f4;
- } 
- .l-heading   {
+
+.l-heading {
     font-size: 40px;
+    color: #333;
 }
 
 .footer {
-    font-size: .85rem;
-position:relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+    font-size: 0.85rem;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
 
-#contact-form .form-group{
+#contact-form .form-group {
     margin-bottom: 10px;
 }
-#contact-form label{
+
+#contact-form label {
     display: block;
     margin-bottom: 5px;
 }
-#contact-form input, #contact-form textarea {
+
+#contact-form input, 
+#contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px #ddd  solid;
+    border: 1px #ddd solid;
+    border-radius: 5px;
+    font-size: 1rem;
 }
+
 #contact-form textarea {
     height: 200px;
 }
-#contact-form input:focus, #contact-form textarea:focus {
-          outline: none;
-          border-color: #f7c88a;
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c88a;
+    box-shadow: 0 0 5px rgba(247, 200, 138, 0.5);
 }
-.bg-dark{
+
+.bg-dark {
     background-color: #333;
     color: #fff;
 }
+
 .text-primary {
     color: darkblue;
 }
+
 .btn {
     display: inline-block;
     font-size: 18px;
@@ -223,7 +226,8 @@ position:relative;
     padding: 13px 20px;
     border: none;
     cursor: pointer;
-    margin-left: 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -234,11 +238,20 @@ position:relative;
 .btn-light {
     background: #f4f4f4;
     color: #333;
+}
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-#contact-info {
-    background-color: #344a72;
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
-#contact-form h1 ,p {
-    margin-left: 40px;
+
+@keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
+
