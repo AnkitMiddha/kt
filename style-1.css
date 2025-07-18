@@ -152,16 +152,6 @@ p {
     margin-bottom: 0.8rem;
 }
 
-#contact-info .container {
-    margin: 0.5rem;
-    padding: 1rem;
-    background-color: #344a72;
-    color: #f4f4f4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
 
 .l-heading {
     font-size: 40px;
@@ -180,34 +170,7 @@ p {
     padding: 1rem;
 }
 
-#contact-form .form-group {
-    margin-bottom: 10px;
-}
 
-#contact-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#contact-form input, 
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px #ddd solid;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#contact-form textarea {
-    height: 200px;
-}
-
-#contact-form input:focus, 
-#contact-form textarea:focus {
-    outline: none;
-    border-color: #f7c88a;
-    box-shadow: 0 0 5px rgba(247, 200, 138, 0.5);
-}
 
 .bg-dark {
     background-color: #333;
